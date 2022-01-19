@@ -1,2 +1,1 @@
-# portfolio
-Design and computer science portfolio website
+# Hi, I'm Julia. Welcome to my portfolio.
