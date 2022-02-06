@@ -26,10 +26,21 @@ body{
 
 /* LANDING PAGE */
 
+.top{
+	content: "";
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+p {
+	font-size: 18px;
+}
+
 .line_1{
     position: absolute;
     margin: 20px 20px;
-    width: 24em;
+    width: 48em;
     margin: 0 auto;
     border-right: 3px solid rgba(255,255,255,.75);
     font-size: 180%;
@@ -43,7 +54,7 @@ body{
     position: absolute;
     margin: 20 auto;
     width: 100%;
-    font-size: 100%;
+    font-size: 18px;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
@@ -83,6 +94,13 @@ body{
 	width: 2400px;
 }
 
+.horiz2 {
+	top: 185px;
+    left: 150px;
+	height: 2px;
+	width: 2400px;
+}
+
 .verts::before {
 	content: "";
         position: absolute;
@@ -95,13 +113,11 @@ body{
 }
 
 .vert::before{
-
         animation-delay: 3.5s;
         animation-fill-mode: forwards;
 }
 
 .vert2::before{
-	
         animation-delay: 7s;
         animation-fill-mode: forwards;
 }
@@ -123,6 +139,57 @@ body{
         animation: horiz_animate 13s linear;
         animation-delay: 4.5s;
         animation-fill-mode: forwards;
+}
+
+.horiz2::before {
+	content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000754;
+        animation: horiz_animate 13s linear;
+        animation-delay: 3.75s;
+        animation-fill-mode: forwards;
+}
+
+#basicinfo {
+	width: auto;
+	color: #000754;
+	position: absolute;
+	top: 150px;
+	left: 300px;
+	padding: 10px 5px;
+	animation: selection 0.5s linear;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+
+#bio {
+	color: #000754;
+	position: absolute;
+	top: 150px;
+	padding: 10px 5px;
+	animation: selection 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.degrees{
+	animation-delay: 5.5s !important;
+	left: 500px;
+	width: 285px;
+}
+
+.certs{
+	animation-delay: 8s !important;
+	left: 1000px;
+	width: 280px;
+}
+.home{
+	animation-delay: 11s !important;
+	left: 1500px;
+	width: auto;
 }
 
 .compsci {
@@ -179,10 +246,11 @@ body{
 	animation: selection 0.5s linear;
 	animation-delay: 9s;
 	animation-fill-mode: forwards;
+	font-size: 17px;
 }
 
 .typewriter{
-  animation: typewriter 2s steps(18) 1s 1 normal both,
+  animation: typewriter 2.5s steps(22) 1s 1 normal both,
              blinkTextCursor 700ms steps(22) infinite normal;
 }
 
@@ -191,7 +259,7 @@ body{
 	height: 300px;
 	object-fit: cover;
 	border-radius: 50%;
-	top: 510px;
+	top: 530px;
 	left: 1000px;
 	position: absolute;
 	opacity: 0%;
@@ -200,11 +268,8 @@ body{
 	animation-fill-mode: forwards;
 }
 
-.icons {
-	width: 40px;
-	height: 40px;
-	object-fit: cover;
-	border-radius: 50%;
+.symbols {
+	color: #fafafa;
 	position: absolute;
 	left: 1475px;
 	opacity: 0%;
@@ -212,6 +277,7 @@ body{
 	animation-fill-mode: forwards;
 	background: #000754;
 	padding: 5px;
+	transition: text-shadow 0.5s ease;
 }
 
 .github {
@@ -229,24 +295,24 @@ body{
 	animation-delay: 15s;
 }
 
+.resume {
+	top: 900px;
+	animation-delay: 15.5s;
+}
+
 .arrow {
-	width: 40px;
-	height: 40px;
-	object-fit: cover;
-	border-radius: 50%;
+	color: #fafafa;
 	position: fixed;
 	top: 10px;
 	left: 10px;
-	background: #000754;
+	background: transparent;
 	padding: 5px;
 }
 
-.meatball {
-	width: 50px;
-	height: 60px;
-	top: 760px;
-	left: 350px;
-	animation-delay: 7.5s;
+/* BUTTON HOVERING */
+
+.symbols:hover {
+  text-shadow: 0 0 10px #ffffff;
 }
 
 /* PROJECT PAGE 1: NASA PACKET DISSECTOR*/
@@ -257,14 +323,28 @@ body{
 	padding: 10px 0px;
 	animation: selection 0.5s linear;
 	animation-fill-mode: forwards;
-	top: 715px;
+	top: 655px;
 	left: 260px;
 	animation-delay: 7.5s;
 	max-width: 75%;
 }
 
+.meatball {
+	position: absolute;
+	opacity: 0%;
+	animation: appear 0.5s linear;
+	animation-fill-mode: forwards;
+	background: #000754;
+	width: 160px;
+	height: 80px;
+	border-radius: 100%;
+	top: 700px;
+	left: 300px;
+	animation-delay: 7.5s;
+}
+
 .a_nasa {
-	top: 750px;
+	top: 690px;
     left: 150px;
 	height: 2px;
 	width: 100px;
@@ -283,49 +363,146 @@ body{
     animation-fill-mode: forwards;
 }
 
-.projecttype {
+/* PROJECT PAGE 2 (project3.html): DADBOT */
+.dadbot {
+	color: #000754;
 	position: absolute;
-    margin: 20px 20px;
-    margin: 0 auto;
-    border-right: 3px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%); 
-	width: 60em;
-	animation: longtypewriter 4s steps(38) 1s 1 normal both,
-			   blinkTextCursor 700ms steps(22) infinite normal;
+	padding: 10px 0px;
+	animation: selection 0.5s linear;
+	animation-fill-mode: forwards;
+	top: 805px;
+	left: 260px;
+	animation-delay: 8s;
+	max-width: 75%;
 }
 
-.abstract_link {
-	position: absolute;
-	margin: 20 auto;
-	color: #fafafa;
-	width: 100%;
-    font-size: 100%;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(50%);
+.dadbot_line {
+	top: 840px;
+    left: 150px;
+	height: 2px;
+	width: 100px;
 }
 
-.project_info {
-	position: absolute;
-	top: 125px;
-	width: 75%;
+.dadbot_line::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000754;
+    animation: horiz_animate 1s linear;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
 }
+
+
+/* PROJECT PAGE 3 (project2.html): NASA NETWORK SNIFFER*/
+.nasa_b {
+	color: #000754;
+	position: absolute;
+	padding: 10px 0px;
+	animation: selection 0.5s linear;
+	animation-fill-mode: forwards;
+	top: 890px;
+	left: 260px;
+	animation-delay: 9s;
+	max-width: 75%;
+}
+
+.b_nasa {
+	top: 925px;
+    left: 150px;
+	height: 2px;
+	width: 100px;
+}
+
+.b_nasa::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000754;
+    animation: horiz_animate 1s linear;
+    animation-delay: 8.5s;
+    animation-fill-mode: forwards;
+}
+
+.meatball2{
+	top: 935px !important;
+	animation-delay: 9s !important;
+}
+
+/* PROJECT PAGE 4 (project4.html): TREESEARCHER */
+.treesearcher_project {
+	color: #000754;
+	position: absolute;
+	padding: 10px 0px;
+	animation: selection 0.5s linear;
+	animation-fill-mode: forwards;
+	top: 720px;
+	left: 710px;
+	animation-delay: 9s;
+	max-width: 75%;
+}
+
+.treesearcher {
+	top: 755px;
+    left: 600px;
+	height: 2px;
+	width: 100px;
+}
+
+.treesearcher::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000754;
+    animation: horiz_animate 1s linear;
+    animation-delay: 8.5s;
+    animation-fill-mode: forwards;
+}
+
+.treesearcher_logo{
+	position: absolute;
+	opacity: 0%;
+	animation: appear 0.5s linear;
+	animation-fill-mode: forwards;
+	background: #000754;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	top: 775px !important;
+	left: 790px !important;
+	animation-delay: 9s !important;
+}
+
 
 /* ANIMATIONS */
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 8em;}
+  to{width: 10.5em;}
 }
 
 @keyframes longtypewriter{
   from{width: 0;}
   to{width: 22em;}
+}
+
+@keyframes dbtypewriter{
+  from{width: 0;}
+  to{width: 14em;}
+}
+
+@keyframes tstypewriter{
+  from{width: 0;}
+  to{width: 20em;}
 }
 
 @keyframes blinkTextCursor{

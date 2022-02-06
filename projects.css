@@ -1,0 +1,281 @@
+* {
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  background: #000754;
+}
+
+body{
+  height: 100%;
+  padding: 4em;
+  color: #fafafa;
+  font-family: 'Source Code Pro', monospace; 
+}
+
+li {
+  padding:0px;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+ul {
+  margin-bottom: 3px;
+}
+
+.projecttype {
+  position: absolute;
+    margin: 20px 20px;
+    margin: 0 auto;
+    border-right: 3px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+  width: 60em;
+  animation: longtypewriter 4s steps(38) 1s 1 normal both,
+         blinkTextCursor 700ms steps(22) infinite normal;
+}
+
+.projecttype.DadBot{
+  animation: dbtypewriter 3s steps(24) 1s 1 normal both,
+         blinkTextCursor 700ms steps(22) infinite normal !important;
+}
+
+.projecttype.ts {
+  animation: tstypewriter 3s steps(28) 1s 1 normal both,
+         blinkTextCursor 700ms steps(22) infinite normal !important;
+}
+
+.abstract_link {
+  position: absolute;
+  background: #000754;
+  margin: 20 auto;
+  color: #fafafa;
+  width: 100%;
+    font-size: 100%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(50%);
+    transition: text-shadow 0.5s ease;
+    left: 300px;
+    top: 100px;
+    width: 500px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.abstract_link:hover{
+  text-shadow: 0 0 10px #ffffff;
+}
+
+.project_info {
+  position: absolute;
+  top: 125px;
+  width: 75%;
+}
+
+.top{
+	content: "";
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.project_line{
+  top: 100px;
+  left: 150px;
+  height: 4150px;
+  width: 2px;
+}
+
+.offshoots {
+  left: 150px;
+  height: 2px;
+  width: 492px;
+}
+
+.link_line {
+  top: 133px;
+}
+.link_line::before {
+  animation-delay: 2.25s !important;
+}
+
+.problem_line {
+  top: 225px;
+}
+.problem_line::before {
+  animation-delay: 2.75s !important;
+}
+
+.solution_line {
+  top: 377px;
+}
+.solution_line::before {
+  animation-delay: 4s !important;
+}
+
+.skills_line {
+  top: 526px;
+}
+.skills_line::before {
+  animation-delay: 5s !important;
+}
+
+.photos_line {
+  top: 725px;
+  width: 4150px;
+  left: 150px;
+  height: 2px;
+}
+.photos_line::before {
+  content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000754;
+        animation: horiz_animate 25s linear;
+        animation-delay: 6.5s;
+        animation-fill-mode: forwards;
+}
+
+.project_line::before{
+  animation-delay: 2s !important;
+  animation-fill-mode: forwards;
+}
+
+.offshoots::before {
+  content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000754;
+        animation: horiz_animate 3s linear;
+        animation-fill-mode: forwards;
+}
+
+
+
+#problem_statement{
+  padding-right: 5px;
+  padding-left: 5px;
+  position: absolute;
+  left: 300px;
+  top: 200px;
+  background: #000754;
+}
+
+#problem{
+  padding-right: 5px;
+  padding-left: 5px;
+  position: absolute;
+  left: 600px;
+  top: 200px;
+  width: 900px;
+  background: #000754;
+}
+
+#solution_statement {
+  padding-right: 5px;
+  padding-left: 5px;
+  position: absolute;
+  left: 300px;
+  top: 350px;
+  background: #000754;
+}
+
+#solution{
+  padding-right: 5px;
+  padding-left: 5px;
+  position: absolute;
+  left: 600px;
+  top: 350px;
+  width: 900px;
+  background: #000754;
+}
+
+
+#skills{
+  padding-right: 5px;
+  padding-left: 5px;
+  position: absolute;
+  left: 300px;
+  top: 500px;
+  background: #000754;
+}
+
+.inventory {
+  padding-right: 5px;
+  padding-left: 5px;
+  position: absolute;
+  left: 600px;
+  top: 504px;
+  background: #000754;
+}
+
+#photos{
+    padding-right: 5px;
+    padding-left: 5px;
+    position: absolute;
+    left: 300px;
+    top: 699px;
+    background: #000754;
+}
+
+.treepics{
+  width: 200px;
+  height: auto;
+  border-radius: 10%;
+  position: absolute;
+  top: 720px;
+}
+
+.trees1 {
+  left: 500px;
+}
+
+.trees2 {
+  left: 800px;
+}
+
+.trees3 {
+  left: 1100px;
+}
+
+.trees4 {
+  left: 1400px;
+}
+
+.trees6 {
+  left: 1700px;
+}
+
+.graphs {
+  height: 435px;
+  width: auto;
+  border-radius: 10%;
+  position: absolute;
+  top: 720px;
+  left: 2000px;
+}
+
+.diags {
+  height: 435px;
+  width: auto;
+  border-radius: 10%;
+  position: absolute;
+  top: 720px;
+  left: 2350px;
+}
