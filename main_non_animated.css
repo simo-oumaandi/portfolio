@@ -45,13 +45,17 @@ p {
 	font-size: 18px;
 }
 
+ul {
+	font-size: 18px;
+}
+
 .line_1{
     position: absolute;
     width: 10.5em;
     margin: 0 auto;
     border-right: 3px solid rgba(255,255,255,.75);
     font-size: 180%;
-    text-align: left;
+    text-align: justify;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%); 
@@ -63,7 +67,7 @@ p {
     margin: 20 auto;
     width: 100%;
     font-size: 18px;
-    text-align: left;
+    text-align: justify;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(50%); 
@@ -83,7 +87,7 @@ p {
 
 .vert2{
 	top: 300px;
-    left: 600px;
+    left: 500px;
 	height: 4000px;
 	width: 2px;
 }
@@ -93,6 +97,8 @@ p {
     left: 1500px;
 	height: 650px;
 	width: 2px;
+	opacity: 0;
+
 }
 
 .horiz {
@@ -114,7 +120,7 @@ p {
 	color: #fafafa;
 	position: absolute;
 	top: 150px;
-	left: 300px;
+	left: 200px;
 	padding: 10px 5px;
 }
 
@@ -126,23 +132,23 @@ p {
 }
 
 .degrees{
-	left: 500px;
+	left: 375px;
 	width: 285px;
 }
 
 .certs{
-	left: 1000px;
+	left: 725px;
 	width: 280px;
 }
 .home{
-	left: 1500px;
+	left: 1075px;
 	width: auto;
 }
 
 .compsci {
 	color: #fafafa;
 	position: absolute;
-	top: 500px;
+	top: 400px;
 	left: 75px;
 	padding: 10px 0px;
 }
@@ -150,8 +156,8 @@ p {
 .design {
 	color: #fafafa;
 	position: absolute;
-	top: 500px;
-	left: 570px;
+	top: 400px;
+	left: 470px;
 	padding: 10px 0px;
 }
 
@@ -159,7 +165,7 @@ p {
 	color: #fafafa;
 	position: absolute;
 	top: 275px;
-	left: 750px;
+	left: 550px;
 	padding: 0px 10px;
 }
 
@@ -169,16 +175,18 @@ p {
 	top: 500px;
 	left: 1480px;
 	padding: 10px 0px;
+	opacity: 0;
 }
 
 .abtme_txt {
 	color: #fafafa;
 	position: absolute;
 	top: 275px;
-	left: 900px;
+	left: 700px;
 	width: 510px;
 	padding: 0px 10px;
 	font-size: 17px;
+	text-align: justify;
 }
 
 .typewriter{
@@ -187,38 +195,38 @@ p {
 }
 
 .portrait {
-	width:300px;
-	height: 300px;
+	width:250px;
+	height: 250px;
 	object-fit: cover;
 	border-radius: 50%;
 	top: 430px;
-	left: 1000px;
+	left: 850px;
 	position: absolute;
 }
 
 .symbols {
 	color: #fafafa;
 	position: absolute;
-	left: 1475px;
+	top: 280px;
 	background: #000754;
 	padding: 5px;
 	transition: text-shadow 0.5s ease;
 }
 
 .github {
-	top: 600px;
+	left: 275px;
 }
 
 .blogspot {
-	top: 700px;
+	left: 350px;
 }
 
 .mail {
-	top: 800px;
+	left: 425px;
 }
 
 .resume {
-	top: 900px;
+	left: 200px;
 }
 
 .arrow {
@@ -241,8 +249,8 @@ p {
 .nasa_a {
 	position: absolute;
 	padding: 5px 0px;
-	top: 655px;
-	left: 250px;
+	top: 500px;
+	left: 175px;
 	max-width: 75%;
 }
 
@@ -252,15 +260,15 @@ p {
 	width: 160px;
 	height: 80px;
 	border-radius: 100%;
-	top: 710px;
-	left: 300px;
+	top: 560px;
+	left: 225px;
 }
 
 .a_nasa {
-	top: 690px;
+	top: 532px;
     left: 150px;
 	height: 2px;
-	width: 100px;
+	width: 25px;
 	color: #fafafa;
 	position: absolute;	
 }
@@ -270,16 +278,16 @@ p {
 .dadbot {
 	position: absolute;
 	padding: 5px 0px;
-	top: 805px;
-	left: 250px;
+	top: 655px;
+	left: 175px;
 	max-width: 75%;
 }
 
 .dadbot_line {
-	top: 840px;
+	top: 687px;
     left: 150px;
 	height: 2px;
-	width: 100px;
+	width: 25px;
 	color: #fafafa;
 }
 
@@ -288,37 +296,37 @@ p {
 .nasa_b {
 	position: absolute;
 	padding: 5px 0px;
-	top: 890px;
-	left: 250px;
+	top: 740px;
+	left: 175px;
 	max-width: 75%;
 }
 
 .b_nasa {
-	top: 925px;
+	top: 775px;
     left: 150px;
 	height: 2px;
-	width: 100px;
+	width: 25px;
     color: #fafafa;
 }
 
 .meatball2{
-	top: 945px !important;
+	top: 795px !important;
 }
 
 /* PROJECT PAGE 4 (project4.html): TREESEARCHER */
 .treesearcher_project {
 	position: absolute;
 	padding: 5px 0px;
-	top: 720px;
-	left: 700px;
+	top: 550px;
+	left: 525px;
 	max-width: 75%;
 }
 
 .treesearcher {
-	top: 755px;
-    left: 600px;
+	top: 582px;
+    left: 500px;
 	height: 2px;
-	width: 100px;
+	width: 25px;
     position: absolute;
     color: #fafafa;
 }
@@ -329,8 +337,8 @@ p {
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
-	top: 785px !important;
-	left: 790px !important;
+	top: 610px !important;
+	left: 630px !important;
 }
 
 
