@@ -39,12 +39,12 @@ ul {
     overflow: hidden;
     transform: translateY(-50%); 
   width: 60em;
-  animation: longtypewriter 4s steps(38) 1s 1 normal both,
+  animation: longtypewriter 3s steps(38) 1s 1 normal both,
          blinkTextCursor 700ms steps(22) infinite normal;
 }
 
 .projecttype.DadBot{
-  animation: dbtypewriter 3s steps(24) 1s 1 normal both,
+  animation: dbtypewriter 2s steps(24) 1s 1 normal both,
          blinkTextCursor 700ms steps(22) infinite normal !important;
 }
 
@@ -60,7 +60,7 @@ ul {
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(50%);
-    left: 300px;
+    left: 200px;
     top: 90px;
     width: 335px;
     padding: 5px;
@@ -90,47 +90,54 @@ ul {
 .project_line{
   top: 100px;
   left: 150px;
-  height: 4150px;
+  height: 436px;
+  width: 2px;
+}
+
+.project_line.tsr{
+  top: 100px;
+  left: 150px;
+  height: 625px !important;
   width: 2px;
 }
 
 .offshoots {
   left: 150px;
   height: 2px;
-  width: 460px;
+  width: 330px;
 }
 
 .link_line {
   top: 133px;
 }
 .link_line::before {
-  animation-delay: 2.25s !important;
+  animation-delay: 0.25s !important;
 }
 
 .problem_line {
-  top: 225px;
+  top: 177px;
 }
 .problem_line::before {
-  animation-delay: 2.75s !important;
+  animation-delay: 0.5s !important;
 }
 
 .solution_line {
-  top: 377px;
+  top: 327px;
 }
 .solution_line::before {
-  animation-delay: 4s !important;
+  animation-delay: 1.15s !important;
 }
 
 .skills_line {
-  top: 526px;
+  top: 536px;
 }
 .skills_line::before {
-  animation-delay: 5s !important;
+  animation-delay: 2s !important;
 }
 
 .photos_line {
   top: 725px;
-  width: 4150px;
+  width: 1350px;
   left: 150px;
   height: 2px;
 }
@@ -142,14 +149,21 @@ ul {
         width: 100%;
         height: 100%;
         background: #000754;
-        animation: horiz_animate 25s linear;
-        animation-delay: 6.5s;
+        animation: horiz_animate 5s linear;
+        animation-delay: 3s;
         animation-fill-mode: forwards;
 }
 
 .project_line::before{
   animation-delay: 2s !important;
-  animation-fill-mode: forwards;
+  animation: animate 2s linear !important;
+  animation-fill-mode: forwards !important;
+}
+
+.project_line.tsr::before{
+  animation-delay: 2s !important;
+  animation: animate 3s linear !important;
+  animation-fill-mode: forwards !important;
 }
 
 .offshoots::before {
@@ -160,7 +174,7 @@ ul {
         width: 100%;
         height: 100%;
         background: #000754;
-        animation: horiz_animate 3s linear;
+        animation: horiz_animate 2s linear;
         animation-fill-mode: forwards;
 }
 
@@ -170,8 +184,8 @@ ul {
   padding-right: 5px;
   padding-left: 5px;
   position: absolute;
-  left: 300px;
-  top: 200px;
+  left: 200px;
+  top: 150px;
   background: #000754;
 }
 
@@ -179,9 +193,9 @@ ul {
   padding-right: 5px;
   padding-left: 5px;
   position: absolute;
-  left: 600px;
-  top: 200px;
-  width: 900px;
+  left: 450px;
+  top: 150px;
+  width: 600px;
   background: #000754;
 }
 
@@ -189,8 +203,8 @@ ul {
   padding-right: 5px;
   padding-left: 5px;
   position: absolute;
-  left: 300px;
-  top: 350px;
+  left: 200px;
+  top: 300px;
   background: #000754;
 }
 
@@ -198,9 +212,9 @@ ul {
   padding-right: 5px;
   padding-left: 5px;
   position: absolute;
-  left: 600px;
-  top: 350px;
-  width: 900px;
+  left: 450px;
+  top: 300px;
+  width: 600px;
   background: #000754;
 }
 
@@ -209,8 +223,8 @@ ul {
   padding-right: 5px;
   padding-left: 5px;
   position: absolute;
-  left: 300px;
-  top: 500px;
+  left: 200px;
+  top: 510px;
   background: #000754;
 }
 
@@ -218,8 +232,8 @@ ul {
   padding-right: 5px;
   padding-left: 5px;
   position: absolute;
-  left: 600px;
-  top: 504px;
+  left: 450px;
+  top: 510px;
   background: #000754;
 }
 
@@ -227,7 +241,7 @@ ul {
     padding-right: 5px;
     padding-left: 5px;
     position: absolute;
-    left: 300px;
+    left: 200px;
     top: 699px;
     background: #000754;
 }
@@ -241,23 +255,24 @@ ul {
 }
 
 .trees1 {
-  left: 500px;
+  left: 450px;
 }
 
 .trees2 {
-  left: 800px;
+  left: 750px;
 }
 
 .trees3 {
-  left: 1100px;
+  left: 1050px;
 }
 
 .trees4 {
-  left: 1400px;
+  left: 1350px;
 }
 
 .trees6 {
-  left: 1700px;
+  top: 1200px !important;
+  left: 450px;
 }
 
 .graphs {
@@ -265,15 +280,16 @@ ul {
   width: auto;
   border-radius: 10%;
   position: absolute;
-  top: 720px;
-  left: 2000px;
+  top: 1200px !important;
+  left: 750px;
 }
+
 
 .diags {
   height: 435px;
   width: auto;
   border-radius: 10%;
   position: absolute;
-  top: 720px;
-  left: 2350px;
+  top: 1200px !important;
+  left: 1050px;
 }
