@@ -83,37 +83,29 @@ ul {
 .vert{
 	top: 150px;
     left: 150px;
-	height: 4150px;
+	height: 2000px;
 	width: 2px;
 }
 
 .vert2{
 	top: 300px;
     left: 500px;
-	height: 4000px;
+	height: 2000px;
 	width: 2px;
-}
-
-.vert3{
-	top: 300px;
-    left: 1500px;
-	height: 650px;
-	width: 2px;
-	opacity: 0;
 }
 
 .horiz {
 	top: 300px;
     left: 150px;
 	height: 2px;
-	width: 2400px;
+	width: 1000px;
 }
 
 .horiz2 {
 	top: 185px;
     left: 150px;
 	height: 2px;
-	width: 2400px;
+	width: 1000px;
 }
 
 .verts::before {
@@ -124,23 +116,17 @@ ul {
         width: 100%;
         height: 100%;
         background: #000754;
-        animation: animate 28s linear;
+        animation: animate 10s linear;
 }
 
 .vert::before{
-        animation-delay: 3.5s;
+        animation-delay: 2.5s;
         animation-fill-mode: forwards;
 }
 
 .vert2::before{
-        animation-delay: 7s;
+        animation-delay: 5s;
         animation-fill-mode: forwards;
-}
-
-.vert3::before{
-        animation-delay: 12s;
-        animation-fill-mode: forwards;
-        animation-duration: 5s !important;
 }
 
 .horiz::before {
@@ -151,8 +137,8 @@ ul {
         width: 100%;
         height: 100%;
         background: #000754;
-        animation: horiz_animate 13s linear;
-        animation-delay: 4.5s;
+        animation: horiz_animate 5s linear;
+        animation-delay: 3.25s;
         animation-fill-mode: forwards;
 }
 
@@ -164,8 +150,8 @@ ul {
         width: 100%;
         height: 100%;
         background: #000754;
-        animation: horiz_animate 13s linear;
-        animation-delay: 3.75s;
+        animation: horiz_animate 5s linear;
+        animation-delay: 2.75s;
         animation-fill-mode: forwards;
 }
 
@@ -177,7 +163,7 @@ ul {
 	left: 200px;
 	padding: 10px 5px;
 	animation: selection 0.5s linear;
-	animation-delay: 4s;
+	animation-delay: 2.75s;
 	animation-fill-mode: forwards;
 }
 
@@ -191,20 +177,20 @@ ul {
 }
 
 .degrees{
-	animation-delay: 5.5s !important;
+	animation-delay: 3.5s !important;
 	left: 375px;
 	width: 240px;
 	text-align: justify;
 }
 
 .certs{
-	animation-delay: 8s !important;
+	animation-delay: 5.75s !important;
 	left: 725px;
 	width: 270px;
 	text-align: justify;
 }
 .home{
-	animation-delay: 11s !important;
+	animation-delay: 7.5s !important;
 	left: 1075px;
 	width: auto;
 	text-align: justify;
@@ -217,7 +203,7 @@ ul {
 	left: 75px;
 	padding: 10px 0px;
 	animation: selection 0.5s linear;
-	animation-delay: 5.75s;
+	animation-delay: 4s;
 	animation-fill-mode: forwards;
 }
 
@@ -228,7 +214,7 @@ ul {
 	left: 470px;
 	padding: 10px 0px;
 	animation: selection 0.5s linear;
-	animation-delay: 8.5s;
+	animation-delay: 5.5s;
 	animation-fill-mode: forwards;
 }
 
@@ -239,20 +225,8 @@ ul {
 	left: 550px;
 	padding: 0px 10px;
 	animation: selection 0.5s linear;
-	animation-delay: 7.8s;
+	animation-delay: 5s;
 	animation-fill-mode: forwards;
-}
-
-.links {
-	color: #000754;
-	position: absolute;
-	top: 500px;
-	left: 1480px;
-	padding: 10px 0px;
-	animation: selection 0.5s linear;
-	animation-delay: 13.5s;
-	animation-fill-mode: forwards;
-	opacity: 0;
 }
 
 .abtme_txt {
@@ -265,14 +239,14 @@ ul {
 	font-size: 17px;
 	text-align: justify;
 	animation: selection 0.5s linear;
-	animation-delay: 9s;
+	animation-delay: 6s;
 	animation-fill-mode: forwards;
 	font-size: 17px;
 	color: #000754;
 }
 
 .typewriter{
-  animation: typewriter 2.5s steps(22) 1s 1 normal both,
+  animation: typewriter 2s steps(22) 1s 1 normal both,
              blinkTextCursor 700ms steps(22) infinite normal;
 }
 
@@ -286,7 +260,7 @@ ul {
 	position: absolute;
 	opacity: 0%;
 	animation: appear 0.5s linear;
-	animation-delay: 9s;
+	animation-delay: 7s;
 	animation-fill-mode: forwards;
 }
 
@@ -304,22 +278,22 @@ ul {
 
 .github {
 	left: 275px;
-	animation-delay: 14s;
+	animation-delay: 3.75s;
 }
 
 .blogspot {
 	left: 350px;
-	animation-delay: 14.5s;
+	animation-delay: 4s;
 }
 
 .mail {
 	left: 425px;
-	animation-delay: 15s;
+	animation-delay: 4.25s;
 }
 
 .resume {
 	left: 200px;
-	animation-delay: 15.5s;
+	animation-delay: 3.5s;
 }
 
 .arrow {
@@ -344,7 +318,7 @@ ul {
 	padding: 5px 0px;
 	top: 500px;
 	left: 175px;
-	animation-delay: 7.5s;
+	animation-delay: 4.5s;
 	max-width: 75%;
 }
 
@@ -359,7 +333,7 @@ ul {
 	border-radius: 100%;
 	top: 560px;
 	left: 225px;
-	animation-delay: 7.5s;
+	animation-delay: 4.5s;
 }
 
 .a_nasa {
@@ -378,7 +352,7 @@ ul {
     height: 100%;
     background: #000754;
     animation: horiz_animate 0.25s linear;
-    animation-delay: 7s;
+    animation-delay: 4.25s;
     animation-fill-mode: forwards;
 }
 
@@ -389,7 +363,7 @@ ul {
 	top: 655px;
 	left: 175px;
 	max-width: 75%;
-	animation-delay: 8s;
+	animation-delay: 5.5s;
 }
 
 .ring_line {
@@ -409,7 +383,7 @@ ul {
     height: 100%;
     background: #000754;
     animation: horiz_animate 0.25s linear;
-    animation-delay: 8s;
+    animation-delay: 5.25s;
     animation-fill-mode: forwards;
 }
 
@@ -419,7 +393,7 @@ ul {
 	padding: 5px 0px;
 	top: 740px;
 	left: 175px;
-	animation-delay: 8s;
+	animation-delay: 6s;
 	max-width: 75%;
 }
 
@@ -439,7 +413,7 @@ ul {
     height: 100%;
     background: #000754;
     animation: horiz_animate 0.25s linear;
-    animation-delay: 8.5s;
+    animation-delay: 5.75s;
     animation-fill-mode: forwards;
 }
 
@@ -450,7 +424,7 @@ ul {
 	padding: 5px 0px;
 	top: 820px;
 	left: 175px;
-	animation-delay: 9s;
+	animation-delay: 6.25s;
 	max-width: 75%;
 }
 
@@ -470,13 +444,13 @@ ul {
     height: 100%;
     background: #000754;
     animation: horiz_animate 0.25s linear;
-    animation-delay: 9s;
+    animation-delay: 6s;
     animation-fill-mode: forwards;
 }
 
 .meatball2{
 	top: 875px !important;
-	animation-delay: 9s !important;
+	animation-delay: 6.25s !important;
 }
 
 /* PROJECT PAGE 4 (project4.html): TREESEARCHER */
@@ -485,7 +459,7 @@ ul {
 	padding: 5px 0px;
 	top: 550px;
 	left: 525px;
-	animation-delay: 9s;
+	animation-delay: 6.5s;
 	max-width: 75%;
 }
 
@@ -505,7 +479,7 @@ ul {
     height: 100%;
     background: #000754;
     animation: horiz_animate 0.25s linear;
-    animation-delay: 8.5s;
+    animation-delay: 6.25s;
     animation-fill-mode: forwards;
 }
 
@@ -520,7 +494,7 @@ ul {
 	border-radius: 50%;
 	top: 610px !important;
 	left: 630px !important;
-	animation-delay: 9s !important;
+	animation-delay: 6.5s !important;
 }
 
 

@@ -92,27 +92,18 @@ ul {
 	width: 2px;
 }
 
-.vert3{
-	top: 300px;
-    left: 1500px;
-	height: 650px;
-	width: 2px;
-	opacity: 0;
-
-}
-
 .horiz {
 	top: 300px;
     left: 150px;
 	height: 2px;
-	width: 2400px;
+	width: 1000px;
 }
 
 .horiz2 {
 	top: 185px;
     left: 150px;
 	height: 2px;
-	width: 2400px;
+	width: 1000px;
 }
 
 #basicinfo {
@@ -173,15 +164,6 @@ ul {
 	top: 275px;
 	left: 550px;
 	padding: 0px 10px;
-}
-
-.links {
-	color: #fafafa;
-	position: absolute;
-	top: 500px;
-	left: 1480px;
-	padding: 10px 0px;
-	opacity: 0;
 }
 
 .abtme_txt {
