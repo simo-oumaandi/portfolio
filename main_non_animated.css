@@ -125,7 +125,7 @@ ul {
 }
 
 #bio {
-	color: #fafafa;
+	color: #000754;
 	position: absolute;
 	top: 150px;
 	padding: 10px 5px;
@@ -133,12 +133,14 @@ ul {
 
 .degrees{
 	left: 375px;
-	width: 285px;
+	width: 240px;
+	text-align: justify;
 }
 
 .certs{
 	left: 725px;
-	width: 280px;
+	width: 270px;
+	text-align: justify;
 }
 .home{
 	left: 1075px;

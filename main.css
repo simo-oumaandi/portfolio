@@ -193,18 +193,21 @@ ul {
 .degrees{
 	animation-delay: 5.5s !important;
 	left: 375px;
-	width: 285px;
+	width: 240px;
+	text-align: justify;
 }
 
 .certs{
 	animation-delay: 8s !important;
 	left: 725px;
-	width: 280px;
+	width: 270px;
+	text-align: justify;
 }
 .home{
 	animation-delay: 11s !important;
 	left: 1075px;
 	width: auto;
+	text-align: justify;
 }
 
 .compsci {
