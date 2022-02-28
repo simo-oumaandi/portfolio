@@ -129,22 +129,26 @@ ul {
 	position: absolute;
 	top: 150px;
 	padding: 10px 5px;
+	color: #fafafa;
 }
 
 .degrees{
 	left: 375px;
 	width: 240px;
 	text-align: justify;
+	color: #fafafa;
 }
 
 .certs{
 	left: 725px;
 	width: 270px;
 	text-align: justify;
+	color: #fafafa;
 }
 .home{
 	left: 1075px;
 	width: auto;
+	color: #fafafa;
 }
 
 .compsci {
