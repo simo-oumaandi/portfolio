@@ -273,9 +273,8 @@ ul {
 	position: absolute;	
 }
 
-
-/* PROJECT PAGE 2 (project3.html): DADBOT */
-.dadbot {
+/* PROJECT PAGE 2 (project5_ring.html): RING */
+.ring {
 	position: absolute;
 	padding: 5px 0px;
 	top: 655px;
@@ -283,7 +282,7 @@ ul {
 	max-width: 75%;
 }
 
-.dadbot_line {
+.ring_line {
 	top: 687px;
     left: 150px;
 	height: 2px;
@@ -292,8 +291,8 @@ ul {
 }
 
 
-/* PROJECT PAGE 3 (project2.html): NASA NETWORK SNIFFER*/
-.nasa_b {
+/* PROJECT PAGE 3 (project3.html): DADBOT */
+.dadbot {
 	position: absolute;
 	padding: 5px 0px;
 	top: 740px;
@@ -301,8 +300,26 @@ ul {
 	max-width: 75%;
 }
 
-.b_nasa {
+.dadbot_line {
 	top: 775px;
+    left: 150px;
+	height: 2px;
+	width: 25px;
+	color: #fafafa;
+}
+
+
+/* PROJECT PAGE 4 (project2.html): NASA NETWORK SNIFFER*/
+.nasa_b {
+	position: absolute;
+	padding: 5px 0px;
+	top: 820px;
+	left: 175px;
+	max-width: 75%;
+}
+
+.b_nasa {
+	top: 855px;
     left: 150px;
 	height: 2px;
 	width: 25px;
@@ -310,10 +327,10 @@ ul {
 }
 
 .meatball2{
-	top: 795px !important;
+	top: 875px !important;
 }
 
-/* PROJECT PAGE 4 (project4.html): TREESEARCHER */
+/* PROJECT PAGE 5 (project4.html): TREESEARCHER */
 .treesearcher_project {
 	position: absolute;
 	padding: 5px 0px;
